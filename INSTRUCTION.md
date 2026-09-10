@@ -5,9 +5,9 @@ Use the following links below:
 
 2. All instructions:
     - how to apply all manifests:
-        kubectl apply -f namespace.yml
-        kubectl apply -f busybox.yml
-        kubectl apply -f todoapp-pod.yml
+        kubectl apply -f infrastructure/namespace.yml
+        kubectl apply -f infrastructure/busybox.yml
+        kubectl apply -f infrastructure/todoapp-pod.yml
 
     - how to test ToDo application using the port-forward command:
         kubectl port-forward pod/todoapp 8081:8080 -n todoapp
